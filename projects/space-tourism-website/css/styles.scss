@@ -1,0 +1,16 @@
+/************************
+* Variables
+************************/
+$color-white: #fff;
+$color-blue-ligth: #D0D6F9;
+$color-blue-dark: #0B0D17;
+
+$text-color: $color-white;
+$text-color: $color-white;
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: $color-blue-dark;
+    color: $text-color;
+}
