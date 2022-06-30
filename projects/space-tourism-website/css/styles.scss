@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
 /************************
 * Variables
 ************************/
@@ -5,12 +7,69 @@ $color-white: #fff;
 $color-blue-ligth: #D0D6F9;
 $color-blue-dark: #0B0D17;
 
-$text-color: $color-white;
-$text-color: $color-white;
+$font-barlow: 'Barlow', sans-serif;
+$font-barlow-condensed: 'Barlow Condensed', sans-serif;
+$font-bellefair: 'Bellefair', serif;
+
+$text-font: $color-white;
+
+$text-color: $color-blue-ligth;
+$text-color-title: $color-white;
+
+$z-index-nav-mobile: 200;
+$z-index-nav-mobile-button: 300;
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
 
 body {
     min-height: 100vh;
     max-width: 100vw;
     background-color: $color-blue-dark;
-    color: $text-color;
+    color: $text-font;
+    font-family: $font-barlow;
+    padding: 0;
+    margin: 0;
 }
+
+a {
+    color: $color-white;
+}
+
+hr {
+    border-color: #383B4B;
+}
+
+img {
+    max-width: 100%;
+}
+
+/************************
+* Animations
+************************/
+@import "./animations/animations";
+
+/************************
+* Atoms
+************************/
+@import "./atoms/typography.scss";
+@import "./atoms/buttons.scss";
+@import "./atoms/tabs.scss";
+@import "./atoms/slider.scss";
+@import "./atoms/navigation-bar.scss";
+
+/************************
+* Modules
+************************/
+@import "./modules/header.scss";
+
+/************************
+* Layouts
+************************/
+@import "./layouts/layouts.scss";
+
+/************************
+* Pages
+************************/
+@import "./pages/home.scss";

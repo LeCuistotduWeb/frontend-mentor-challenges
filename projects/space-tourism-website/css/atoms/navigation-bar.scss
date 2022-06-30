@@ -1,0 +1,108 @@
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(81.5485px);
+    min-width: 250px;
+    padding-left: 32px;
+    padding-top: 118px;
+    transform: translate(100%);
+    z-index: $z-index-nav-mobile;
+
+    &.open {
+        transform: translate(0);
+    }
+
+    .nav-item {
+        font-family: $font-barlow-condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: $color-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        padding: 32px;
+        color: $color-white;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: auto;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            height: 31px;
+            margin: auto;
+            width: 4px;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+
+        &.active::before {
+            opacity: 1;
+            background-color: $color-white;
+            transition: opacity .3s;
+        }
+    }
+
+    .nav-item .nav-item-number {
+        font-family: $font-barlow-condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: $color-white;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .navigation-bar {
+        transform: translate(0);
+        background-color: rgba($color-white, .04);
+        padding: 45px 45px 45px 96px;
+        position: inherit;
+        width: auto;
+
+        .nav-item {
+            margin: 0;
+            margin-right: 45px;
+            position: relative;
+            display: inline-block;
+            padding: 0;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: auto;
+                bottom: -45px;
+                height: 0;
+                width: 100%;
+                opacity: 0;
+                transition: opacity .3s;
+            }
+
+            &.hover::before,
+            &:hover::before {
+                background-color: $color-white;
+                opacity: .5;
+                transition: opacity .3s;
+                height: 3px;
+            }
+
+            &.active::before {
+                opacity: 1;
+                background-color: $color-white;
+                transition: opacity .3s;
+                height: 3px;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.heading-1,
+h1 {
+    font-family: $font-bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 100px;
+    color: $color-white;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.heading-2,
+h2 {
+    font-family: $font-bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 115px;
+    color: $color-white;
+    text-transform: uppercase;
+}
+
+.heading-3,
+h3 {
+    font-family: $font-bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.heading-4,
+h4 {
+    font-family: $font-bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.heading-5,
+h5 {
+    font-family: $font-barlow-condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 19px;
+    letter-spacing: 4.725px;
+    color: $color-blue-ligth;
+    text-transform: uppercase;
+}
+
+.subheadeing {
+    font-family: $font-bellefair;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.subheadeing-2 {
+    font-family: $font-barlow-condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.nav-text {
+    font-family: $font-barlow-condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: $color-white;
+}
+
+p {
+    font-family: $font-barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: $color-blue-ligth;
+}
+
+@media screen and (min-width: 767px) {
+    .heading-1,
+    h1 {
+        font-size: 150px;
+        line-height: 172px;
+    }
+    h5 {
+        font-size: 150px;
+        line-height: 172px;
+    }
+}

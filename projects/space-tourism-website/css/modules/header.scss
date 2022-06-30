@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+
+    .navigation-bar {
+        width: auto;
+    }
+
+    .menu,
+    .close {
+     display: none;
+     cursor: pointer;
+     z-index: $z-index-nav-mobile-button;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding: 24px;
+
+        .menu {
+            display: block;
+        }
+
+        .close {
+            display: none;
+        }
+
+        &.open .close {
+            display: block;
+        }
+
+        &.open .menu {
+            display: none;
+        }
+    }
+}

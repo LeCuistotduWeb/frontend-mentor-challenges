@@ -8,7 +8,7 @@
   },
   "scripts": {
     "compile": "sass ./css/styles.scss ./css/styles.css",
-    "watch": "sass ./css/styles.scss:./css/styles.css --watch"
+    "watch": "sass --watch ./css/styles.scss:./css/styles.css"
   },
   "author": "lecuistotduweb",
   "license": "ISC"

@@ -1,0 +1,21 @@
+.page-home {
+    background-image: url('/projects/space-tourism-website/assets/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    & .btn-main {
+        margin: 80px auto 0;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .page-home {
+        background-image: url('/projects/space-tourism-website/assets/home/background-home-tablet.jpg');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-home {
+        background-image: url('/projects/space-tourism-website/assets/home/background-home-desktop.jpg');
+    }
+}

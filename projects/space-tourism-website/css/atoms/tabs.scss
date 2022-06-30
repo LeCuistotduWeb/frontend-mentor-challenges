@@ -1,0 +1,51 @@
+.tabs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab {
+    display: inline-block;
+    color: $color-white;
+    font-family: $font-barlow-condensed;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    &.hover::before,
+    &:hover::before {
+        background-color: $color-white;
+        opacity: .5;
+        transition: opacity .3s;
+        height: 3px;
+    }
+
+    &.active::before {
+        opacity: 1;
+        background-color: $color-white;
+        transition: opacity .3s;
+        height: 3px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tabs {
+        display: block;
+        & .tab {
+            margin: 0 35px;
+        }
+    }
+}
