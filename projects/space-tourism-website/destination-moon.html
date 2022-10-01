@@ -1,37 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <html lang="en">
   
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/styles.css">
+  
+    <title>Destination Moon | Space tourism website</title>
+    <script async defer src="./js/app.js"></script>
+  </head>
+  
+  <body class="page page-destination">
+  
+    <!-- header -->
+    <header class="header">
+  
+      <!-- brand -->
+      <div class="brand">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" fill="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20 0C20 0 20 20 0 20C19.648 20.1428 20 40 20 40C20 40 20 20 39.9999 20C20 20 20 0 20 0Z" fill="#0B0D17" />
+        </svg>
+      </div>
+      <!-- /brand -->
+  
+      <div class="menu js-open-menu">
+        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="3" fill="#D0D6F9" />
+          <rect y="9" width="24" height="3" fill="#D0D6F9" />
+          <rect y="18" width="24" height="3" fill="#D0D6F9" />
+        </svg>
+  
+      </div>
+  
+      <div class="close js-close-menu">
+        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.5752" y="0.954102" width="24" height="3" transform="rotate(45 2.5752 0.954102)" fill="#D0D6F9" />
+          <rect x="0.454102" y="17.9246" width="24" height="3" transform="rotate(-45 0.454102 17.9246)" fill="#D0D6F9" />
+        </svg>
+      </div>
+  
+      <!-- navigation -->
+      <nav class="navigation-bar">
+        <a href="/" class="nav-item active">
+          <span class="nav-item-number">00</span>
+          Home
+        </a>
+        <a href="./destination-moon.html" class="nav-item">
+          <span class="nav-item-number">01</span>
+          Destination
+        </a>
+        <a href="./crew-commander.html" class="nav-item">
+          <span class="nav-item-number">02</span>
+          Crew
+        </a>
+        <a href="./technology-capsule.html" class="nav-item">
+          <span class="nav-item-number">03</span>
+          Technology
+        </a>
+      </nav>
+      <!-- /navigation -->
+    </header>
+    <!-- /header -->
+  
+    <div class="container">
+      <h1 class="title">
+        <span class="number">01</span> Pick your destination
+      </h1>
+  
+      <section class="content">
+        <div class="planet__bloc">
+          <img src="/assets/destination/image-moon.png" alt="europa image">
+        </div>
+        <div class="content__bloc">
+  
+          <div class="tabs">
+            <a href="/destination-moon.html" class="tab active">Moon</a>
+            <a href="/destination-mars.html" class="tab">Mars</a>
+            <a href="/destination-europa.html" class="tab">Europa</a>
+            <a href="/destination-titan.html" class="tab">Titan</a>
+          </div>
+  
+          <h1>Moon</h1>
+          <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+          regain perspective and come back refreshed. While you’re there, take in some history
+          by visiting the Luna 2 and Apollo 11 landing sites.
+          </p>
+  
+          <hr>
+  
+          <div class="bloc-infos" style="display: flex">
+            <div class="bloc">
+              <div class="heading-5">AVG. DISTANCE</div>
+              <div class="subheadeing">384,400 km</div>
+            </div>
+            <div class="bloc">
+              <div class="heading-5">Est. travel time</div>
+              <div class="subheadeing">3 days</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  
+  </html>

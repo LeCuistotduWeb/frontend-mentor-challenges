@@ -7,10 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
 
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Destination Europa | Space tourism website</title>
   <script async defer src="./js/app.js"></script>
 </head>
-<body class="page">
+<body class="page page-destination">
 
 <!-- header -->
 <header class="header">
@@ -44,68 +44,72 @@
 
   <!-- navigation -->
   <nav class="navigation-bar">
-    <a href="#" class="nav-item active">
+    <a href="/" class="nav-item active">
       <span class="nav-item-number">00</span>
       Home
     </a>
-    <a href="./destination-europa.html" class="nav-item">
+    <a href="/destination-moon.html" class="nav-item">
       <span class="nav-item-number">01</span>
       Destination
     </a>
-    <a href="./crew-commander.html" class="nav-item">
+    <a href="/crew-commander.html" class="nav-item">
       <span class="nav-item-number">02</span>
       Crew
     </a>
-    <a href="./technology-capsule.html" class="nav-item">
+    <a href="/technology-capsule.html" class="nav-item">
       <span class="nav-item-number">03</span>
       Technology
     </a>
   </nav>
   <!-- /navigation -->
-
 </header>
 <!-- /header -->
 
-<section class="content">
-  <div class="content-bloc__1">
-    <div class="heading-5"><span>01</span> Pick your destination</div>
-    <img src="./assets/destination/image-europa.png" alt="europa image">
-  </div>
-  <div class="content-bloc__2">
-
-    <div class="tabs">
-      <a href="#" class="tab">Moon</a>
-      <a href="#" class="tab">Mars</a>
-      <a href="#" class="tab active">Europa</a>
-      <a href="#" class="tab">Titan</a>
+<div class="container">
+  <h1 class="title">
+    <span class="number">01</span> Pick your destination
+  </h1>
+  
+  <section class="content">
+    <div class="planet__bloc">
+      <img src="/assets/destination/image-europa.png" alt="europa image">
     </div>
-
-    <h1>Europa</h1>
-    <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a
-      winter lover’s dream. With an icy surface, it’s perfect for a bit of
-      ice skating, curling, hockey, or simple relaxation in your snug
-      wintery cabin.
-      <br>
-      Avg. distance
-      628 mil. km
-      <br>
-      Est. travel time
-      3 years
-    </p>
-
-    <hr>
-
-    <div class="bloc-infos" style="display: flex">
-      <div class="bloc">
-        <div class="heading-5">AVG. DISTANCE</div>
-        <div class="subheadeing">628 MIL. km</div>
+    <div class="content__bloc">
+  
+      <div class="tabs">
+        <a href="/destination-moon.html" class="tab">Moon</a>
+        <a href="/destination-mars.html" class="tab">Mars</a>
+        <a href="/destination-europa.html" class="tab active">Europa</a>
+        <a href="/destination-titan.html" class="tab">Titan</a>
       </div>
-      <div class="bloc">
-        <div class="heading-5">Est. travel time</div>
-        <div class="subheadeing">3 years</div>
+  
+      <h1>Europa</h1>
+      <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+        winter lover’s dream. With an icy surface, it’s perfect for a bit of
+        ice skating, curling, hockey, or simple relaxation in your snug
+        wintery cabin.
+        <br>
+        Avg. distance
+        628 mil. km
+        <br>
+        Est. travel time
+        3 years
+      </p>
+  
+      <hr>
+  
+      <div class="bloc-infos" style="display: flex">
+        <div class="bloc">
+          <div class="heading-5">AVG. DISTANCE</div>
+          <div class="subheadeing">628 MIL. km</div>
+        </div>
+        <div class="bloc">
+          <div class="heading-5">Est. travel time</div>
+          <div class="subheadeing">3 years</div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 </body>
 </html>
