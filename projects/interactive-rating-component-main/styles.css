@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+    --color-orange: hsl(25, 97%, 53%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-grey: hsl(217, 12%, 63%);
+    --color-medium-grey: hsl(216, 12%, 54%);
+    --color-dark-blue: hsl(213, 19%, 18%);
+    --color-very-dark-blue: hsl(216, 12%, 8%);
+
+    --color-dark: hsl(218deg 19% 16%);
+
+    --font-default: 'Overpass', sans-serif;
+}
+
+body {
+    font-size: 15px;
+    font-family: var(--font-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    color: var(--color-medium-grey);
+    background-color: var(--color-very-dark-blue);
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button-primary {
+    height: 50px;
+    color: #fff;
+    background-color: var(--color-orange);
+    transition: all .3s;
+}
+
+.button-primary:hover {
+    height: 50px;
+    color: var(--color-orange);
+    background-color: var(--color-white);
+}
+
+.card {
+    background-color: var(--color-dark);
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 300px;
+    border-radius: 1rem;
+}
+
+.card-icon {
+    background-color: var(--color-dark-blue);
+    padding: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.card-title {
+    color: var(--color-white);
+}
+
+.card-notes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-notes button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    color: var(--color-medium-grey);
+    background-color: var(--color-dark-blue);
+    transition: all .3s;
+}
+.card-notes button:hover {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+.card-notes button.active {
+    color: var(--color-white);
+    background-color: var(--color-medium-grey);
+}
+
+.card button {
+    margin-top: 1rem;
+}
+
+.card-result {
+    text-align: center;
+    display: none;
+}
+
+.card-result-selected {
+    color: var(--color-orange);
+    padding: .5rem;
+    border-radius: 50px;
+    text-align: center;
+    background-color: var(--color-dark-blue);
+    display: inline-block;
+    margin: 1rem 0 .5rem;
+}
