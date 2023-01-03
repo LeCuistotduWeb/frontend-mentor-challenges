@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neongreen: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 100vh;
+    flex-direction: column;
+    color: var(--light-cyan);
+    padding: 1rem;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+
+.hidden-desktop {
+    display: block;
+}
+
+.hidden-mobile {
+    display: none;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: .5rem;
+    max-width: 450px;
+    width: 100%;
+    background-color: var(--dark-grayish-blue);
+    text-align: center;
+    position: relative;
+}
+
+.advice {
+    color: var(--neongreen);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.advice-text {
+    font-size: 28px;
+    margin-top: 1.5rem;
+}
+
+.card .divider img {
+    margin: 1.5rem 0 1.5rem;
+    width: 100%;
+}
+
+.card button {
+    background-color: var(--neongreen);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(50%);
+    transition: all .3s;
+}
+
+.card button:hover {
+    box-shadow: 0px 0px 30px var(--neongreen);
+}
+
+@media screen and (min-width: 768px){
+    .hidden-mobile {
+        display: block;
+    } 
+
+    .hidden-desktop {
+        display: none;
+    }
+}
