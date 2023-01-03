@@ -8,8 +8,7 @@ body {
 .page {
     max-width: 1200px;
     margin: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 2rem 1rem;
 }
 
 h1 {
@@ -20,7 +19,7 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     list-style-type: none;
     padding: 0;
@@ -43,10 +42,20 @@ h1 {
 
 .project a {
     text-decoration: none;
+    display: block;
+    height: 100%;
 }
 
 .project h3 {
     padding: 1rem;
-     color: rgb(47, 126, 152);
-     text-decoration: none;
+    color: rgb(47, 126, 152);
+    text-decoration: none;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
