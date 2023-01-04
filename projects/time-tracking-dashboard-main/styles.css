@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --blue: hsl(246, 80%, 60%);
+    --light-orange: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --light-red: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+
+    --white: #fff;
+
+    --border-radius: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    color: var(--pale-blue);
+    background-color: var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    color: var(--desaturated-blue);
+}
+
+.list li:not(:last-child) {
+    padding-bottom: 1rem;
+}
+.list li a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s;
+}
+.list li a:hover {
+    color: inherit;
+    color: var(--white);
+}
+.list li a.active {
+    padding-bottom: 1rem;
+    color: var(--white);
+}
+
+.underline,
+.overline {
+    font-size: .8rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    color: var(--white);
+    font-weight: 300;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+.card {
+    border-radius: var(--border-radius);
+    background-color: var(--dark-blue);
+    z-index: 0;
+}
+
+.card.card-stats .card-header {
+    position: relative;
+    overflow: hidden;
+    min-height: 60px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    z-index: -1;
+}
+
+.card.card-stats .card-header img {
+    position: absolute;
+    width: 70px;
+    right: 1rem;
+    top: 3px;
+    bottom: 0;
+}
+
+.card .card-body {
+    padding: 2rem;
+}
+
+.card-stats {
+    cursor: pointer;
+}
+
+.card-stats .card-body {
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-top: -1rem;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background-color: var(--dark-blue);
+    z-index: 1;
+}
+
+.card-stats .card-body:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.card .title {
+    margin-bottom: .25rem;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.card-action:hover svg path {
+    fill: var(--white);
+}
+
+.card-name {
+    color: var(--white)
+}
+
+.card-user .card-header {
+    background-color: var(--blue);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+}
+
+.card-user .title {
+    font-size: 2.2rem;
+}
+
+.card-user .card-header img {
+    width: 60px;
+    border: solid 2px var(--white);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.card-work .card-header {
+    background-color: var(--light-orange);
+}
+.card-play .card-header {
+    background-color: var(--soft-blue);
+}
+.card-study .card-header {
+    background-color: var(--light-red);
+}
+.card-exercise .card-header {
+    background-color: var(--lime-green);
+}
+.card-social .card-header {
+    background-color: var(--violet);
+}
+.card-self-care .card-header {
+    background-color: var(--soft-orange);
+}
+@media screen and (min-width: 880px) {
+    .grid {
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 2rem;
+        width: auto;
+        grid-template-areas:
+            "card-user card-work card-play "
+            "card-user card-study card-exercise"
+            "card-user  card-social card-self-care";
+    }
+    .card-user {
+        grid-area: card-user;
+    }
+
+    .card-work {
+        grid-area: card-work;
+    }
+
+    .card-play {
+        grid-area: card-play;
+    }
+
+    .card-study {
+        grid-area: card-study;
+    }
+
+    .card-exercise {
+        grid-area: card-exercise;
+    }
+
+    .card-social {
+        grid-area: card-social;
+    }
+
+    .card-self-care {
+        grid-area: card-self-care;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+        width: auto;
+        grid-template-areas:
+            "card-user card-work card-play card-study"
+            "card-user card-exercise card-social card-self-care";
+    }
+}
