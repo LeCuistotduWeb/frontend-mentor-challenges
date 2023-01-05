@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import './components/variables';
+@import './components/theme';
+
+body {
+    max-width: 1200px;
+    padding: 1rem 1rem 2rem;
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--h1-color);
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: var(--h2-color);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.percent {
+    &.positive {
+        color: $positiv
+    }
+
+    &.negative {
+        color: $negative
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 5px;
+    }
+
+    &.negative::before {
+        background-image: url(../../images/icon-down.svg);
+    }
+
+    &.positive::before {
+        background-image: url(../../images/icon-up.svg);
+    }
+}
+
+.section-overview {
+    margin-top: 3rem;
+}
+
+@import './components/grid';
+@import './components/switch';
+@import './components/card';
+@import './components/header';

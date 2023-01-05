@@ -1,0 +1,85 @@
+.card {
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: var(--bg-card);
+    cursor: pointer;
+}
+
+.card .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    background-color: var(--bg-card-hover);
+}
+
+.card.card-followers {
+    text-align: center;
+    position: relative;
+}
+
+.card.card-followers:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card.card-followers .card-name {
+    font-size: .8rem;
+    font-weight: 700;
+}
+.card.card-followers .stat {
+    font-size: 3rem;
+    color: var(--text-2);
+    font-weight: 700;
+}
+
+.card.card-followers .underline {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: .7rem;
+}
+
+.card.card-followers .percent {
+    margin-top: 1.5rem;
+}
+
+.card.card-overview .card-name {
+    font-weight: 700;
+}
+
+.card-overview .stat {
+    font-size: 1.6rem;
+    color: var(--text-2);
+    font-weight: 700;
+}
+
+.card.facebook:after {
+    background: $facebook;
+}
+
+.card.twitter:after {
+    background: $twitter;
+}
+
+.card.instagram:after {
+    background: $instagram;
+}
+
+.card.youtube:after {
+    background: $youTube;
+}
+
+.card .flex:not(:last-child) {
+    margin-bottom: 1rem;
+}

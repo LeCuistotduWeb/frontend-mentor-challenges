@@ -1,0 +1,46 @@
+:root {
+    color-scheme: light dark;
+    --bg: ${$very-dark-blue};
+    --bg-top: #{$very-dark-blue-2};
+    --bg-card: #{$dark-desaturated-blue};
+    --bg-card-hover: #{rgba($desaturated-blue, .6)};
+    --text: #{$desaturated-blue};
+    --text-2: #{$white};
+    --positiv: #{$positiv};
+    --negative: #{$negative};
+    --h1-color: #{$white};
+    --h2-color: #{$white};
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+    --bg: ${$white};
+    --bg-top: #{$very-pale-blue};
+    --bg-card: #{$very-pale-blue};
+    --bg-card-hover: #{$light-grayish-blue};
+    --text: #{$dark-grayish-blue};
+    --text-2: #{$very-dark-blue};
+    --positiv: #{$lime-green};
+    --negative: #{$bright-red};
+    --h1-color: black;
+    --h2-color: #{$dark-grayish-blue};
+    }
+}
+
+body {
+    color: var(--text);
+    background: var(--bg);
+}
+
+body.light {
+    --bg: white;
+    --bg-top: #{$very-pale-blue};
+    --bg-card: #{$very-pale-blue};
+    --bg-card-hover: #{$light-grayish-blue};
+    --text: #{$dark-grayish-blue};
+    --text-2: #{$very-dark-blue};
+    --positiv: #{$lime-green};
+    --negative: #{$bright-red};
+    --h1-color: black;
+    --h2-color: #{$dark-grayish-blue};
+}

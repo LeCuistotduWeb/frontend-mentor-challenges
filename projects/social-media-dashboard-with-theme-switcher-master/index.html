@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <script defer src="./assets/js/app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="title-container">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="theme-switcher">
+        <label for="themeSwitcher">Dark Mode</label>
+        <input
+          id="themeSwitcher"
+          type="checkbox"
+          class="switch-button button-theme-toggle"
+        />
+      </div>
+    </header>
+
+    <section class="secton-followers">
+      <div class="grid">
+        <div class="card card-followers facebook">
+          <div class="social">
+            <img src="./images/icon-facebook.svg" alt="" />
+            <span class="card-name">@nathanf</span>
+          </div>
+          <div class="stat">1987</div>
+          <div class="underline">Followers</div>
+          <div class="percent positive">12 Today</div>
+        </div>
+
+        <div class="card card-followers twitter">
+          <div class="social">
+            <img src="./images/icon-twitter.svg" alt="" />
+            <div class="card-name">@nathanf</div>
+          </div>
+          <div class="stat">1044</div>
+          <div class="underline">Followers</div>
+          <div class="percent positive">99 Today</div>
+        </div>
+
+        <div class="card card-followers instagram">
+          <div class="social">
+            <img src="./images/icon-instagram.svg" alt="" />
+            <div class="card-name">@realnathanf</div>
+          </div>
+          <div class="stat">11k</div>
+          <div class="underline">Followers</div>
+          <div class="percent positive">1099 Today</div>
+        </div>
+
+        <div class="card card-followers youtube">
+          <div class="social">
+            <img src="./images/icon-youtube.svg" alt="" />
+            <div class="card-name">Nathan F.</div>
+          </div>
+          <div class="stat">8239</div>
+          <div class="underline">Subscribers</div>
+          <div class="percent negative">144 Today</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-overview">
+      <h2>Overview - Today</h2>
+
+      <div class="grid">
+        <div class="card card-overview">
+          <div class="flex">
+            <div class="card-name">Page Views</div>
+            <div><img src="./images/icon-facebook.svg" alt="" /></div>
+          </div>
+          <div class="flex">
+            <div class="stat">87</div>
+            <div class="percent positive">3%</div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="flex">
+            <div class="card-name">Likes</div>
+            <div><img src="./images/icon-facebook.svg" alt="" /></div>
+          </div>
+          <div class="flex">
+            <div class="stat">52</div>
+            <div class="percent positive">2%</div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="flex">
+            <div class="card-name">Likes</div>
+            <div><img src="./images/icon-instagram.svg" alt="" /></div>
+          </div>
+          <div class="flex">
+            <div class="stat">5462</div>
+            <div class="percent negative">2257%</div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="flex">
+            <div class="card-name">Profile Views</div>
+            <div><img src="./images/icon-instagram.svg" alt="" /></div>
+          </div>
+          <div class="flex">
+            <div class="stat">52k</div>
+            <div class="percent positive">1375%</div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="flex">
+            <div class="card-name">Retweets</div>
+            <div><img src="./images/icon-twitter.svg" alt="" /></div>
+          </div>
+          <div class="flex">
+            <div class="stat">117</div>
+            <div class="percent positive">303%</div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="flex">
+            <div class="card-name">Likes</div>
+            <div><img src="./images/icon-twitter.svg" alt="" /></div>
+          </div>
+          <div class="flex">
+            <div class="stat">507</div>
+            <div class="percent positive">553%</div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="flex">
+            <div class="card-name">Likes</div>
+            <div><img src="./images/icon-youtube.svg" alt="" /></div>
+          </div>
+          <div class="flex">
+            <div class="stat">107</div>
+            <div class="percent negative">19%</div>
+          </div>
+        </div>
+
+        <div class="card card-overview">
+          <div class="flex">
+            <div class="card-name">Total Views</div>
+            <div><img src="./images/icon-youtube.svg" alt="" /></div>
+          </div>
+          <div class="flex">
+            <div class="stat">1407</div>
+            <div class="percent negative">12%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

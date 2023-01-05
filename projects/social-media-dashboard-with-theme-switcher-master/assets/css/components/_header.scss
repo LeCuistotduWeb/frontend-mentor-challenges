@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    margin-bottom: 0;
+}
+
+.header p {
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.header .theme-switcher {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+}

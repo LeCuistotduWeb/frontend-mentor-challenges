@@ -1,0 +1,12 @@
+{
+  "name": "social-media-dashboard-with-theme-switcher-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
+  "main": "assets/js/app.js",
+  "scripts": {
+    "build": "sass assets/css/app.scss assets/css/app.css --style compressed",
+    "watch": "sass --watch assets/css/app.scss assets/css/app.css --style compressed"
+  },
+  "author": "LeCuistotduWeb",
+  "license": "ISC"
+}
