@@ -569,7 +569,7 @@ p {
 * Pages
 ************************/
 .page-home {
-  background-image: url("/assets/home/background-home-mobile.jpg");
+  background-image: url(".../assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -582,14 +582,14 @@ p {
 
 @media screen and (min-width: 768px) {
   .page-home {
-    background-image: url("/assets/home/background-home-tablet.jpg");
+    background-image: url("../assets/home/background-home-tablet.jpg");
     background-position: center; }
     .page-home .content {
       margin: 106px auto 0;
       padding: 32px; } }
 @media screen and (min-width: 1200px) {
   .page-home {
-    background-image: url("/assets/home/background-home-desktop.jpg");
+    background-image: url("../assets/home/background-home-desktop.jpg");
     text-align: left; }
     .page-home .content {
       margin-top: 250px;
@@ -600,7 +600,7 @@ p {
     .page-home .content-bloc__1 {
       margin: 0; } }
 .page-destination {
-  background-image: url("/assets/destination/background-destination-mobile.jpg");
+  background-image: url("../assets/destination/background-destination-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -629,7 +629,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .page-destination {
-    background-image: url("/assets/destination/background-destination-tablet.jpg"); }
+    background-image: url("../assets/destination/background-destination-tablet.jpg"); }
     .page-destination .title {
       margin: 60px 32px;
       text-align: left; }
@@ -637,7 +637,7 @@ p {
       margin-top: 32px; } }
 @media screen and (min-width: 1200px) {
   .page-destination {
-    background-image: url("/assets/destination/background-destination-desktop.jpg"); }
+    background-image: url("../assets/destination/background-destination-desktop.jpg"); }
     .page-destination .title {
       margin: 76px 0 32px; }
     .page-destination .content {
