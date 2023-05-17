@@ -1,3 +1,5 @@
+@import "../animations/animations.scss";
+
 .page-destination {
     background-image: url('/assets/destination/background-destination-mobile.jpg');
     background-repeat: no-repeat;
@@ -16,12 +18,14 @@
         & img {
             margin: auto;
             max-width: 60%;
+            animation: fadeInLeft .5s ease-in-out;
         }
     }
 
     .content {
         text-align: center;
         padding: 0 24px;
+        animation: fadeInBottom .2s ease-in-out;
     }
     
     .bloc-infos {

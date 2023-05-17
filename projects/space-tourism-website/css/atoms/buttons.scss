@@ -52,6 +52,21 @@
             height: 450px;
             transition: background .3s;
             background-color: rgba($color-white, .1);
+            animation: mainButtonAnimation 3s ease-in-out infinite;
         }
+    }
+}
+
+@keyframes mainButtonAnimation {
+    from {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.5);
     }
 }
